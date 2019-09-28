@@ -5,7 +5,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'pipelines-javascript-docker'
+  imageName: 'pipelines-python-docker'
   DOCKER_BUILDKIT: 1
 
 steps:
@@ -14,4 +14,4 @@ steps:
   inputs:
     repository: $(imageName)
     command: build
-    Dockerfile: app/Dockerfile
+    Dockerfile: Dockerfile
